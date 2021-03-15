@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlexSP Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+    <link rel="icon" href="assets/favicon.jpg">
+</head>
+
+<body>
+    <nav class="header">
+        <h1><a href="galleryEng.html" class="title">AlexSP</a></h1>
+        <div>
+            <ul class="links navlinks">
+                <li><a href="shopEng.html" class="li">Shop</a></li>
+                <li><a href="galleryEng.html" class="li">Gallery</a></li>
+                <li><a href="aboutEng.html" class="li">About</a></li>
+                <li><a href="contactEng.html" class="li">Contact</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Language</button>
+            <div class="dropdown-content">
+                <a href="shopGer.html">German</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="index">
+        <br><br><br><br><br>
+        <div>
+            <h1 class="titlepage">Shop</h1>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <a href="landscapeEng.html" class="galleryimg"><img src="assets\IMG_1779.JPG" alt=""></a>
+                <hr class="hr">
+                <a href="landscapeEng.html"><p class="gallerytext">Landscape</p></a>
+            </div>
+            <div class="txtgallery">
+                <a href="longExposureEng.html" class="galleryimg"><img src="assets\IMG_1518.JPG" alt=""></a>
+                <hr class="hr">
+                <a href="longExposureEng.html"><p class="gallerytext">Long Exposure</p></a>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <a href="natureEng.html" class="galleryimg"><img src="assets\IMG_0635.JPG" alt=""></a>
+                <hr class="hr">
+                <a href="natureEng.html"><p class="gallerytext">Nature</p></a>
+            </div>
+            <div class="txtgallery">
+                <!-- <a href="portraitEng.html" class="galleryimg"><img src="assets\IMG_2785.JPG" alt=""></a> -->
+                <hr class="hr">
+                <a href="portraitEng.html"><p class="gallerytext">Portrait</p></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" role="generic">
+        <div class="cc">
+            <p>© Copyright 2021 Alexandru Sporis</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/alexsp3066/" style="color: white;"><i class="fa fa-instagram"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://twitter.com/Alex55578024" style="color: white;"><i class="fa fa-twitter"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://www.facebook.com/alex.sporid.7" style="color: white;"><i class="fa fa-facebook"
+                    style="font-size: 36px;"></i></a>
+        </div>
+    </footer>
+    <script>
+        const navslide = () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.navlinks')
+            const navLinks = document.querySelectorAll('.navlinks li')
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('navactive');
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animantion) {
+                        link.style.animantion = ''
+                    }
+                    else {
+                        link.style.animantion = 'navLinkFade 0.5s ease forwards ${index / 7 + 1}s'
+                        nav.style.visibility = "visible"
+                    }
+                });
+
+                burger.classList.toggle('toggle')
+            });
+        }
+
+        navslide()
+    </script>
+</body>
+
+</html>

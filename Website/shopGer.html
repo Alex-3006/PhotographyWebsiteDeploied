@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlexSP Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+    <link rel="icon" href="assets/favicon.jpg">
+</head>
+
+<body>
+    <nav class="header">
+        <h1><a href="galleryGer.html" class="title">AlexSP</a></h1>
+        <div>
+            <ul class="links navlinks">
+                <li><a href="shopGer.html" class="li">Shop</a></li>
+                <li><a href="galleryGer.html" class="li">Galerie</a></li>
+                <li><a href="aboutGer.html" class="li">Über mich</a></li>
+                <li><a href="contactGer.html" class="li">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Sprache</button>
+            <div class="dropdown-content">
+                <a href="#">Deutsch</a>
+                <a href="shopEng.html">Englisch</a>
+            </div>
+        </div>
+    </nav>
+    <div class="index">
+        <br><br><br><br><br>
+        <div>
+            <h1 class="titlepage">Shop</h1>
+        </div>
+        <div class="row">
+            <div class="txtgallery">
+                <a href="landscapeGer.html" class="galleryimg"><img src="assets\IMG_1779.JPG" alt=""></a>
+                <hr class="hr">
+                <a href="landscapeGer.html"><p class="gallerytext">Landschaft</p></a>
+            </div>
+            <div class="txtgallery">
+                <a href="longExpsureGer.html" class="galleryimg"><img src="assets\IMG_1518.JPG" alt=""></a>
+                <hr class="hr">
+                <a href="longExpsureGer.html"><p class="gallerytext">Lange Verschlusszeit</p></a>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <a href="natureGer.html" class="galleryimg"><img src="assets\IMG_0635.JPG" alt=""></a>
+                <hr class="hr">
+                <a href="natureGer.html"><p class="gallerytext">Natur</p></a>
+            </div>
+            <div class="txtgallery">
+                <!-- <a href="protraitGer.html" class="galleryimg"><img src="assets\IMG_2785.JPG" alt=""></a> -->
+                <hr class="hr">
+                <a href="protraitGer.html"><p class="gallerytext">Portrait</p></a>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" role="generic">
+        <div class="cc">
+            <p>© Copyright 2021 Alexandru Sporis</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/alexsp3066/" style="color: white;"><i class="fa fa-instagram"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://twitter.com/Alex55578024" style="color: white;"><i class="fa fa-twitter"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://www.facebook.com/alex.sporid.7" style="color: white;"><i class="fa fa-facebook"
+                    style="font-size: 36px;"></i></a>
+        </div>
+    </footer>
+    <script>
+        const navslide = () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.navlinks')
+            const navLinks = document.querySelectorAll('.navlinks li')
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('navactive');
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animantion) {
+                        link.style.animantion = ''
+                    }
+                    else {
+                        link.style.animantion = 'navLinkFade 0.5s ease forwards ${index / 7 + 1}s'
+                        nav.style.visibility = "visible"
+                    }
+                });
+
+                burger.classList.toggle('toggle')
+            });
+        }
+
+        navslide()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlexSP Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+    <link rel="icon" href="assets/favicon.jpg">
+</head>
+
+<body>
+    <nav class="header">
+        <h1><a href="galleryEng.html" class="title">AlexSP</a></h1>
+        <div>
+            <ul class="links navlinks">
+                <li><a href="shopEng.html" class="li">Shop</a></li>
+                <li><a href="galleryEng.html" class="li">Gallery</a></li>
+                <li><a href="aboutEng.html" class="li">About</a></li>
+                <li><a href="contactEng.html" class="li">Contact</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Language</button>
+            <div class="dropdown-content">
+                <a href="shopGer.html">German</a>
+                <a href="#">English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="index">
+        <br><br><br><br><br>
+        <div>
+            <h1 class="titlepage">Shop</h1>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <button id="myBtntxt" class="gallerytext" style="border: none;">Single-Portrait</button>
+
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div id="myModal1" class="modal1">
+                            <div class="modal-content1">
+                                <span class="close1">&times;</span>
+                                <div class="row col-75" style="margin-top: 0;">
+                                    <form id="contact-form" action="http://127.0.0.1:8080/myaction" method="post">
+                                        <input type="hidden" name="picturename" value="Single Portrait Englisch">
+                                        <div class="col-50">
+                                            <h3>Billing Address</h3>
+                                            <label for="fname"><i class="fa fa-user"></i> Full
+                                                Name</label>
+                                            <input type="text" id="fname" name="user_name" placeholder="John M. Doe">
+                                            <label for="email"><i class="fa fa-envelope"></i>
+                                                Email</label>
+                                            <input type="text" id="email" name="user_email"
+                                                placeholder="john@example.com">
+                                            <label for="adr"><i class="fa fa-address-card-o"></i>
+                                                Address</label>
+                                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                            <label for="city"><i class="fa fa-institution"></i>
+                                                City</label>
+                                            <input type="text" id="city" name="city" placeholder="New York">
+                                        </div>
+                                        <h4>And please check your Email</h4>
+                                        <input type="submit" value="Submit" class="btn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Title: Single Portrait</h4>
+                        <h5>You will get a picture of your front view.
+                            <br>
+                            I will contact you as soon as possible.
+                        </h5>
+                        <h2>Price: 5€</h2>
+                        <button id="myBtn1">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="txtgallery">
+                <button id="myBtn1txt" class="gallerytext" style="border: none;">Single Portrait with multiple
+                    positions</button>
+
+                <div id="myModal2" class="modal2">
+                    <div class="modal-content2">
+                        <span class="close2">&times;</span>
+                        <div id="myModal3" class="modal3">
+                            <div class="modal-content3">
+                                <span class="close3">&times;</span>
+                                <div class="row col-75" style="margin-top: 0;">
+                                    <form id="contact-form" action="http://127.0.0.1:8080/myaction" method="post">
+                                        <input type="hidden" name="picturename"
+                                            value="Single Portrait with multiple positions Englisch">
+                                        <div class="col-50">
+                                            <h3>Billing Address</h3>
+                                            <label for="fname"><i class="fa fa-user"></i> Full
+                                                Name</label>
+                                            <input type="text" id="fname" name="user_name" placeholder="John M. Doe">
+                                            <label for="email"><i class="fa fa-envelope"></i>
+                                                Email</label>
+                                            <input type="text" id="email" name="user_email"
+                                                placeholder="john@example.com">
+                                            <label for="adr"><i class="fa fa-address-card-o"></i>
+                                                Address</label>
+                                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                            <label for="city"><i class="fa fa-institution"></i>
+                                                City</label>
+                                            <input type="text" id="city" name="city" placeholder="New York">
+                                        </div>
+                                        <h4>And please check your Email</h4>
+                                        <input type="submit" value="Submit" class="btn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Title: Single Portrait with multiple positions</h4>
+                        <h5>You will get three Portraits of yourself:
+                            <br>
+                            Frontal view, Side profile and Half profile
+                            <br>
+                            I will contact you as soon as possible.
+                        </h5>
+                        <h2>Price: 20€</h2>
+                        <button id="myBtn2">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <button id="myBtn2txt" class="gallerytext" style="border: none;">Double Portrait</button>
+
+                <div id="myModal4" class="modal">
+                    <div class="modal-content">
+                        <span class="close4">&times;</span>
+                        <div id="myModal5" class="modal1">
+                            <div class="modal-content1">
+                                <span class="close5">&times;</span>
+                                <div class="row col-75" style="margin-top: 0;">
+                                    <form id="contact-form" action="http://127.0.0.1:8080/myaction" method="post">
+                                        <input type="hidden" name="picturename" value="Double Portrait Englisch">
+                                        <div class="col-50">
+                                            <h3>Billing Address</h3>
+                                            <label for="fname"><i class="fa fa-user"></i> Full
+                                                Name</label>
+                                            <input type="text" id="fname" name="user_name" placeholder="John M. Doe">
+                                            <label for="email"><i class="fa fa-envelope"></i>
+                                                Email</label>
+                                            <input type="text" id="email" name="user_email"
+                                                placeholder="john@example.com">
+                                            <label for="adr"><i class="fa fa-address-card-o"></i>
+                                                Address</label>
+                                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                            <label for="city"><i class="fa fa-institution"></i>
+                                                City</label>
+                                            <input type="text" id="city" name="city" placeholder="New York">
+                                        </div>
+                                        <h4>And please check your Email</h4>
+                                        <input type="submit" value="Submit" class="btn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Title: Double Portrait</h4>
+                        <h5>Both of you will get together a picture of your:
+                            <br>
+                            Frontal view, Side profile and Half profile
+                            <br>
+                            and alone a picture of:
+                            <br>
+                            Frontal view.
+                            <br>
+                            I will contact you as soon as possible.
+                        </h5>
+                        <h2>Price: 50€</h2>
+                        <button id="myBtn3">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+            <div class="txtgallery">
+                <button id="myBtn3txt" class="gallerytext" style="border: none;">Family Shooting</button>
+
+                <div id="myModal6" class="modal2">
+                    <div class="modal-content2">
+                        <span class="close6">&times;</span>
+                        <div id="myModal7" class="modal3">
+                            <div class="modal-content3">
+                                <span class="close7">&times;</span>
+                                <div class="row col-75" style="margin-top: 0;">
+                                    <form id="contact-form" action="http://127.0.0.1:8080/myaction" method="post">
+                                        <input type="hidden" name="picturename" value="Family Shooting Englisch">
+                                        <div class="col-50">
+                                            <h3>Billing Address</h3>
+                                            <label for="fname"><i class="fa fa-user"></i> Full
+                                                Name</label>
+                                            <input type="text" id="fname" name="user_name" placeholder="John M. Doe">
+                                            <label for="email"><i class="fa fa-envelope"></i>
+                                                Email</label>
+                                            <input type="text" id="email" name="user_email"
+                                                placeholder="john@example.com">
+                                            <label for="adr"><i class="fa fa-address-card-o"></i>
+                                                Address</label>
+                                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                            <label for="city"><i class="fa fa-institution"></i>
+                                                City</label>
+                                            <input type="text" id="city" name="city" placeholder="New York">
+                                        </div>
+                                        <h4>And please check your Email</h4>
+                                        <input type="submit" value="Submit" class="btn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Title: Family Shooting</h4>
+                        <h5>You will get a picture of:
+                            <br>
+                            the whole familiy together, the parents, all children, each member of the familiy alone and
+                            if avaible the pet(s).
+                            <br>
+                            If you want other extras contact me.
+                            <br>
+                            I will contact you as soon as possible.
+                        </h5>
+                        <h2>Price: 150€</h2>
+                        <button id="myBtn4">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <button id="myBtn4txt" class="gallerytext" style="border: none;">Company Shooting</button>
+
+                <div id="myModal8" class="modal">
+                    <div class="modal-content">
+                        <span class="close8">&times;</span>
+                        <div id="myModal9" class="modal1">
+                            <div class="modal-content1">
+                                <span class="close9">&times;</span>
+                                <div class="row col-75" style="margin-top: 0;">
+                                    <form id="contact-form" action="http://127.0.0.1:8080/myaction" method="post">
+                                        <input type="hidden" name="picturename" value="Company Shooting Englisch">
+                                        <div class="col-50">
+                                            <h3>Billing Address</h3>
+                                            <label for="fname"><i class="fa fa-user"></i> Full
+                                                Name</label>
+                                            <input type="text" id="fname" name="user_name" placeholder="John M. Doe">
+                                            <label for="email"><i class="fa fa-envelope"></i>
+                                                Email</label>
+                                            <input type="text" id="email" name="user_email"
+                                                placeholder="john@example.com">
+                                            <label for="adr"><i class="fa fa-address-card-o"></i>
+                                                Address</label>
+                                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                            <label for="city"><i class="fa fa-institution"></i>
+                                                City</label>
+                                            <input type="text" id="city" name="city" placeholder="New York">
+                                        </div>
+                                        <h4>And please check your Email</h4>
+                                        <input type="submit" value="Submit" class="btn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Title: Company Shooting</h4>
+                        <h5>Your company will get photos of:
+                            <br>
+                            The whole company(20€), a portrait of each person(10€ per Person), a image while working of
+                            each person(10€ per Person) and if avaible a photo of each group of the company(10€ per
+                            Person)
+                            <br>
+                            I will contact you as soon as possible.
+                        </h5>
+                        <h2>Price: start at 50€</h2>
+                        <button id="myBtn5">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="txtgallery">
+                <button id="myBtn1txt" class="gallerytext" style="border: none;">Familiy Shooting</button>
+
+                <div id="myModal2" class="modal2">
+                    <div class="modal-content2">
+                        <span class="close2">&times;</span>
+                        <div id="myModal3" class="modal3">
+                            <div class="modal-content3">
+                                <span class="close3">&times;</span>
+                                <div class="row col-75" style="margin-top: 0;">
+                                    <form id="contact-form" action="http://127.0.0.1:8080/myaction" method="post">
+                                        <input type="hidden" name="picturename" value="Familiy Shooting Englisch">
+                                        <div class="col-50">
+                                            <h3>Billing Address</h3>
+                                            <label for="fname"><i class="fa fa-user"></i> Full
+                                                Name</label>
+                                            <input type="text" id="fname" name="user_name" placeholder="John M. Doe">
+                                            <label for="email"><i class="fa fa-envelope"></i>
+                                                Email</label>
+                                            <input type="text" id="email" name="user_email"
+                                                placeholder="john@example.com">
+                                            <label for="adr"><i class="fa fa-address-card-o"></i>
+                                                Address</label>
+                                            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+                                            <label for="city"><i class="fa fa-institution"></i>
+                                                City</label>
+                                            <input type="text" id="city" name="city" placeholder="New York">
+                                        </div>
+                                        <h4>And please check your Email</h4>
+                                        <input type="submit" value="Submit" class="btn">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Title: Familiy Shooting</h4>
+                        <h5>You will get a picture of:
+                            <br>
+                            the whole familiy together, the parents, all children, each member of the familiy alone and
+                            if avaible the pet(s).
+                            <br>
+                            If you want other extras contact me.
+                            <br>
+                            I will contact you as soon as possible.
+                        </h5>
+                        <h2>Price: 1500€</h2>
+                        <button id="myBtn2">Buy Now!</button>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        </div>
+    </div>
+
+    <footer class="footer" role="generic">
+        <div class="cc">
+            <p>© Copyright 2021 Alexandru Sporis</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/alexsp3066/" style="color: white;"><i class="fa fa-instagram"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://twitter.com/Alex55578024" style="color: white;"><i class="fa fa-twitter"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://www.facebook.com/alex.sporid.7" style="color: white;"><i class="fa fa-facebook"
+                    style="font-size: 36px;"></i></a>
+        </div>
+    </footer>
+    <script>
+        const navslide = () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.navlinks')
+            const navLinks = document.querySelectorAll('.navlinks li')
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('navactive');
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animantion) {
+                        link.style.animantion = ''
+                    }
+                    else {
+                        link.style.animantion = 'navLinkFade 0.5s ease forwards ${index / 7 + 1}s'
+                        nav.style.visibility = "visible"
+                    }
+                });
+
+                burger.classList.toggle('toggle')
+            });
+        }
+
+        navslide()
+
+        // Einzel-Portrait
+        var modal = document.getElementById("myModal");
+
+        var btntxt = document.getElementById("myBtntxt");
+
+        var span = document.getElementsByClassName("close")[0];
+
+        btntxt.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Einzel-Portrait buy
+        var modal1 = document.getElementById("myModal1");
+
+        var btn1 = document.getElementById("myBtn1");
+
+        var span1 = document.getElementsByClassName("close1")[0];
+
+        btn1.onclick = function () {
+            modal1.style.display = "block";
+        }
+
+        span1.onclick = function () {
+            modal1.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal1) {
+                modal1.style.display = "none";
+            }
+        }
+
+
+        // Einzel-Portrait front view
+        var modal2 = document.getElementById("myModal2");
+
+        var btntxt1 = document.getElementById("myBtn1txt");
+
+        var span2 = document.getElementsByClassName("close2")[0];
+
+        btntxt1.onclick = function () {
+            modal2.style.display = "block";
+        }
+
+        span2.onclick = function () {
+            modal2.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal2) {
+                modal2.style.display = "none";
+            }
+        }
+
+        // Einzel-Portrait front view buy
+        var modal3 = document.getElementById("myModal3");
+
+        var btn2 = document.getElementById("myBtn2");
+
+        var span3 = document.getElementsByClassName("close3")[0];
+
+        btn2.onclick = function () {
+            modal3.style.display = "block";
+        }
+
+        span3.onclick = function () {
+            modal3.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal3) {
+                modal3.style.display = "none";
+            }
+        }
+
+        // double-portrait
+        var modal4 = document.getElementById("myModal4");
+
+        var btntxt2 = document.getElementById("myBtn2txt");
+
+        var span4 = document.getElementsByClassName("close4")[0];
+
+        btntxt2.onclick = function () {
+            modal4.style.display = "block";
+        }
+
+        span4.onclick = function () {
+            modal4.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal4) {
+                modal4.style.display = "none";
+            }
+        }
+
+        // double-portrait buy
+        var modal5 = document.getElementById("myModal5");
+
+        var btn3 = document.getElementById("myBtn3");
+
+        var span5 = document.getElementsByClassName("close5")[0];
+
+        btn3.onclick = function () {
+            modal5.style.display = "block";
+        }
+
+        span5.onclick = function () {
+            modal5.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal5) {
+                modal5.style.display = "none";
+            }
+        }
+
+
+        // family-portrait
+        var modal6 = document.getElementById("myModal6");
+
+        var btntxt3 = document.getElementById("myBtn3txt");
+
+        var span6 = document.getElementsByClassName("close6")[0];
+
+        btntxt3.onclick = function () {
+            modal6.style.display = "block";
+        }
+
+        span6.onclick = function () {
+            modal6.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal6) {
+                modal6.style.display = "none";
+            }
+        }
+
+        // family-portrait buy
+        var modal7 = document.getElementById("myModal7");
+
+        var btn4 = document.getElementById("myBtn4");
+
+        var span7 = document.getElementsByClassName("close7")[0];
+
+        btn4.onclick = function () {
+            modal7.style.display = "block";
+        }
+
+        span7.onclick = function () {
+            modal7.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal7) {
+                modal7.style.display = "none";
+            }
+        }
+
+        // company portrait 
+        var modal8 = document.getElementById("myModal8");
+
+        var btntxt4 = document.getElementById("myBtn4txt");
+
+        var span8 = document.getElementsByClassName("close8")[0];
+
+        btntxt4.onclick = function () {
+            modal8.style.display = "block";
+        }
+
+        span8.onclick = function () {
+            modal8.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal8) {
+                modal8.style.display = "none";
+            }
+        }
+
+        // company portrait buy
+        var modal9 = document.getElementById("myModal9");
+
+        var btn5 = document.getElementById("myBtn5");
+
+        var span9 = document.getElementsByClassName("close9")[0];
+
+        btn5.onclick = function () {
+            modal9.style.display = "block";
+        }
+
+        span9.onclick = function () {
+            modal9.style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            if (event.target == modal9) {
+                modal9.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

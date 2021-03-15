@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AlexSP Photography</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="node_modules\normalize.css\normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.6/dist/css/uikit.min.css ">
+    <link rel="icon" href="assets/favicon.jpg">
+</head>
+
+<body>
+    <nav class="header">
+        <h1><a href="galleryGer.html" class="title">AlexSP</a></h1>
+        <div>
+            <ul class="links navlinks">
+                <li><a href="shopGer.html" class="li">Shop</a></li>
+                <li><a href="galleryGer.html" class="li">Galerie</a></li>
+                <li><a href="aboutGer.html" class="li">Über mich</a></li>
+                <li><a href="contactGer.html" class="li">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Language</button>
+            <div class="dropdown-content">
+                <a href="#">German</a>
+                <a href="galleryEng.html">English</a>
+            </div>
+        </div>
+    </nav>
+    <div class="index">
+        <br><br><br><br><br>
+        <div>
+            <h1 class="titlepage">Galerie</h1>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <img src="assets\IMG_2213.JPG" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Landschaft</p>
+            </div>
+            <div class="txtgallery">
+                <img src="assets\IMG_1899.JPG" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Reise</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <img src="assets\IMG_2059.JPG" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Astrophotographie</p>
+            </div>
+            <div class="txtgallery">
+                <img src="assets\IMG_1591.JPG" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Schwarz and Weiß</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <img src="assets\IMG_20190304_152110.jpg" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Ferien</p>
+            </div>
+            <div class="txtgallery">
+                <!-- <img src="assets\IMG_2745.JPG" alt="" class="galleryimg"> -->
+                <br>
+                <p class="gallerytext">Familie</p>
+            </div>
+        </div>
+        <!-- <br><br><br>
+    <div class="row">
+        <div class="txtgallery">
+            <img src="assets\IMG_0635.JPG" alt="" class="galleryimg">
+            <hr class="hr">
+            <p class="gallerytext">Golden Hour</p>
+        </div>
+        <div class="txtgallery">
+            <img src="assets\IMG_0635.JPG" alt="" class="galleryimg">
+            <hr class="hr">
+            <p class="gallerytext">Cityscape</p>
+        </div>
+    </div> -->
+        <br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <img src="assets\IMG_1518.JPG" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Lange Verschlusszeit</p>
+            </div>
+            <div class="txtgallery">
+                <img src="assets\IMG_0635.JPG" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Makro</p>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="row">
+            <div class="txtgallery">
+                <img src="assets\IMG_2058.JPG" alt="" class="galleryimg">
+                <br>
+                <p class="gallerytext">Nacht</p>
+            </div>
+            <div class="txtgallery">
+                <!-- <img src="assets\IMG_2785.JPG" alt="" class="galleryimg"> -->
+                <br>
+                <p class="gallerytext">Portrait</p>
+            </div>
+        </div>
+    </div>
+    <br><br><br>
+    <footer class="footer" role="generic">
+        <div class="cc">
+            <p>© Copyright 2021 Alexandru Sporis</p>
+        </div>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/alexsp3066/" style="color: white;"><i class="fa fa-instagram"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://twitter.com/Alex55578024" style="color: white;"><i class="fa fa-twitter"
+                    style="font-size: 36px;"></i></a>
+            <a href="https://www.facebook.com/alex.sporid.7" style="color: white;"><i class="fa fa-facebook"
+                    style="font-size: 36px;"></i></a>
+        </div>
+    </footer>
+    <script>
+        const navslide = () => {
+            const burger = document.querySelector('.burger')
+            const nav = document.querySelector('.navlinks')
+            const navLinks = document.querySelectorAll('.navlinks li')
+
+            burger.addEventListener('click', () => {
+                nav.classList.toggle('navactive');
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animantion) {
+                        link.style.animantion = ''
+                    }
+                    else {
+                        link.style.animantion = 'navLinkFade 0.5s ease forwards ${index / 7 + 1}s'
+                        nav.style.visibility = "visible"
+                    }
+                });
+
+                burger.classList.toggle('toggle')
+            });
+        }
+
+        navslide()
+    </script>
+</body>
+
+</html>
